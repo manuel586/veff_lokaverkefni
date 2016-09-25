@@ -2,11 +2,11 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "client.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon server/server.js --ignore components"
-},
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -19,5 +19,8 @@
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "webpack": "^1.13.2"
+  },
+  "devDependencies": {
+    "babel-preset-react-hmre": "^1.1.1"
   }
 }

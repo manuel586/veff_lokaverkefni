@@ -2,10 +2,10 @@ import React from 'react'
 import { render } from 'react-dom'
 
 
-class App extends React.Component{
-  redner(){
-    return <p>Hello React!</p>;
+var App = React.createClass({
+  render: function(){
+   return <span>HELLLLLO</span>;
   }
-}
+});
 
-ReactDOM.render(<App/>, document.getElementById('app');
+render(<App/>, document.getElementById('app'));
