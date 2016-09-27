@@ -1,11 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import App from '../components/App'
 
-
-var App = React.createClass({
-  render: function(){
-   return <span>HELLLLLO</span>;
-  }
-});
 
 render(<App/>, document.getElementById('app'));
