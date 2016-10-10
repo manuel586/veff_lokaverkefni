@@ -5,7 +5,7 @@ var webpack = require('webpack');
 var webpackDevMiddleware = require('webpack-dev-middleware');
 var webpackHotMiddleware = require('webpack-hot-middleware');
 var fs = require('fs');
-
+var bodyParser = require('body-parser');
 
 
 var app = express();
@@ -17,15 +17,17 @@ app.use(webpackHotMiddleware(compiler));
 
 
 app.use(express.static('./dist'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
-app.use('/', function(req,res){
-  res.sendFile(path.resolve('client/index.html'));
-});
+
 
 var COMMENTS_FILE = path.join(__dirname, './comments.json');
 
 app.get('/api/comments', function(req, res) {
+	debugger
   fs.readFile(COMMENTS_FILE, function(err, data) {
+  	console.log(COMMENTS_FILE);
     if (err) {
       console.error(err);
       process.exit(1);
@@ -60,7 +62,9 @@ app.post('/api/comments', function(req, res) {
   });
 });
 
-
+app.use('/', function(req,res){
+  res.sendFile(path.resolve('client/index.html'));
+});
 
 var port = 3000;
 
