@@ -4,7 +4,7 @@ import CommentBox from './CommentBox'
 
 var App = React.createClass({
   render: function(){
-    return <CommentBox url="/api/comments" pollInterval={2000}/>
+    return <CommentBox url="/api/comments" pollInterval={2000} />
   }
 });
 

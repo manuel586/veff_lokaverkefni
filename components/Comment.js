@@ -1,4 +1,5 @@
 import React from 'react'
+import Remarkable from 'remarkable'
 
 var Comment = React.createClass({
   rawMarkup: function() {

@@ -4,8 +4,7 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './client/client.js',
-    './client/style/main.less'
+    './client/client.js'
   ],
   output: {
     path: require("path").resolve("./dist"),
@@ -26,10 +25,6 @@ module.exports = {
 	query: {
 	  presets: ['react','es2015','react-hmre']
 	}
-      },
-      {
-        test: /\.less$/,
-	loader: "style!css!autoprefixer!less"
       }
     ]
   }
