@@ -1,10 +1,18 @@
 import React from 'react'
 import { render } from 'react-dom'
-import CommentBox from './CommentBox'
+import Header from './Header'
+import Footer from './Footer'
+import Petrol from './Petrol'
 
 var App = React.createClass({
   render: function(){
-    return <CommentBox url="/api/comments" pollInterval={2000} />
+    return (
+    	<div>
+	    	<Header />
+	    	<Petrol />
+	    	<Footer />
+    	</div>
+    	);
   }
 });
 
