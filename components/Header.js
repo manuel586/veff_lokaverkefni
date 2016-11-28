@@ -1,5 +1,6 @@
 import React from 'react'
 import {Navbar,Nav,NavItem,NavDropdown, MenuItem} from 'React-Bootstrap'
+import {LinkContainer} from 'react-router-bootstrap'
 
 var Header = React.createClass({
   render: function() {
@@ -13,7 +14,9 @@ var Header = React.createClass({
 	    </Navbar.Header>
 	    <Navbar.Collapse>
 	      <Nav>
-	        <NavItem eventKey={1} href="https://www.youtube.com/watch?v=jAiRdMSIVko">Link</NavItem>
+	      	<LinkContainer to={{pathname:'/Petrol'}}>
+	        <NavItem eventKey={1}>Link</NavItem>
+	        </LinkContainer>
 	        <NavItem eventKey={2} href="https://www.youtube.com/watch?v=7baQQEzIxGU">Link</NavItem>
 	      </Nav>
 	    </Navbar.Collapse>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from '../components/App'
+import RRouter from '../components/RRouter'
 
 
-render(<App/>, document.getElementById('app'));
+render(<RRouter/>, document.getElementById('app'));

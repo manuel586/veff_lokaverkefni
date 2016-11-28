@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Panel } from 'React-Bootstrap'
 import Loader from 'halogen'
-
+import {LinkContainer} from 'react-router-bootstrap'
 var Menu = React.createClass({
 	render: function(){
 		return(
@@ -9,11 +9,13 @@ var Menu = React.createClass({
 			<Navbar>
 			    <Navbar.Header>
 			      <Navbar.Brand>
-			        <a href="#">React-Bootstrap</a>
+			        <a href="#">Bensín verð</a>
 			      </Navbar.Brand>
 			    </Navbar.Header>
 			    <Nav>
-			      <NavItem eventKey={1} href="#">Link</NavItem>
+			    <LinkContainer to={{pathname:'/Petrol'}}>
+			      <NavItem eventKey={1} >Link</NavItem>
+			      </LinkContainer>
 			      <NavItem eventKey={2} href="#">Link</NavItem>
 			      <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
 			        <MenuItem eventKey={3.1}>Action</MenuItem>
