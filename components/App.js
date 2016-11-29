@@ -10,7 +10,7 @@ var App = React.createClass({
     return (
     	<div>
 	    	<Header />
-	    	<Link to="/Petrol">Petrol</Link>
+	    	{this.props.children}
 	    	<Footer />
     	</div>
     	);
