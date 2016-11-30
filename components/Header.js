@@ -15,10 +15,10 @@ var Header = React.createClass({
 	    <Navbar.Collapse>
 	      <Nav>
 	      	<LinkContainer to={{pathname:'/Petrol'}}>
-	        <NavItem eventKey={1}>Link</NavItem>
+	        <NavItem eventKey={1}>Petrol</NavItem>
 	        </LinkContainer>
 	        <LinkContainer to={{pathname:'/Gas'}}>
-	        <NavItem eventKey={2}>Link</NavItem>
+	        <NavItem eventKey={2}>Gas</NavItem>
 	        </LinkContainer>
 	      </Nav>
 	    </Navbar.Collapse>
