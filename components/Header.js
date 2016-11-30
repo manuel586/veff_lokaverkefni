@@ -17,7 +17,9 @@ var Header = React.createClass({
 	      	<LinkContainer to={{pathname:'/Petrol'}}>
 	        <NavItem eventKey={1}>Link</NavItem>
 	        </LinkContainer>
-	        <NavItem eventKey={2} href="https://www.youtube.com/watch?v=7baQQEzIxGU">Link</NavItem>
+	        <LinkContainer to={{pathname:'/Gas'}}>
+	        <NavItem eventKey={2}>Link</NavItem>
+	        </LinkContainer>
 	      </Nav>
 	    </Navbar.Collapse>
 	  </Navbar>

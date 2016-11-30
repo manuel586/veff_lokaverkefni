@@ -27,6 +27,9 @@ var Gas = React.createClass({
     return (
       <div>
         <h1>Listi yfir bensínverð</h1>
+        {!this.state.thePetrolData.results ?
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif"></img>
+          :
         <Table striped bordered condensed hover>
         <thead>
           <tr>
@@ -48,6 +51,7 @@ var Gas = React.createClass({
               })}
         </tbody>
         </Table>
+        }
       </div>
     );
   }
